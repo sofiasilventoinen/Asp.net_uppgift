@@ -1,0 +1,81 @@
+﻿
+@model RegisterForm
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout_CenterScreen.cshtml";
+}
+
+<section class="registerform">
+    <div class="title">
+        <div class="headline">
+            <span>Register your new account here</span>
+            <div class="underline"></div>
+        </div>
+    </div>
+
+<form>
+        <div class="form-group">
+            <div class="mb-3">
+                <label asp-for="FirstName" class="control-label">Firstname *</label>
+            </div>
+            <input asp-for="FirstName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <div class="form-label d-flex justify-content-between">
+            <label asp-for="LastName" class="control-label">Lastname *</label>
+         </div>
+            <input asp-for="LastName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <div class="form-label d-flex justify-content-between">
+            <label asp-for="Email" class="control-label">Email *</label>
+            </div>
+            <input asp-for="Email" class="form-control" />
+        </div>
+        <div class="form-group">
+            <div class="form-label d-flex justify-content-between">
+                <label asp-for="PhoneNumber" class="control-label">PhoneNumber</label>
+            </div>
+            <input asp-for="PhoneNumber" class="form-control" />
+        </div>
+        <div class="form-group">
+            <div class="form-label d-flex justify-content-between">
+                <label asp-for="StreetName" class="control-label">Streetname *</label>
+            </div>
+            <input asp-for="StreetName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <div class="form-label d-flex justify-content-between">
+                <label asp-for="PostalCode" class="control-label">Postalcode *</label>
+            </div>
+            <input asp-for="PostalCode" class="form-control" />
+        </div>
+        <div class="form-group">
+            <div class="form-label d-flex justify-content-between">
+                <label asp-for="City" class="control-label">City *</label>
+            </div>
+            <input asp-for="City" class="form-control" />
+        </div>
+        <div class="form-group">
+            <div class="form-label d-flex justify-content-between">
+                <label asp-for="Company" class="control-label">Company</label>
+            </div>
+            <input asp-for="Company" class="form-control" />
+        </div>
+        <div class="form-group">
+            <div class="form-label d-flex justify-content-between">
+                <label asp-for="Password" class="control-label">Password *</label>
+                <a asp-controller="Forgot" asp-action="Index">Forgot your password?</a>
+            </div>
+            <input asp-for="Password" class="form-control" />
+        </div>
+        <div class="form-group">
+            <div class="form-label d-flex justify-content-between">
+                <label asp-for="ConfirmPassword" class="control-label">Confirm Password *</label>
+            </div>
+            <input asp-for="ConfirmPassword" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-success">SUBMIT</button>
+    </form>
+    </section>

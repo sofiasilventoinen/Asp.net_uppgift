@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+html, body {
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    max-width: 1140px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo menulinks";
+}
+.header .logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.header .logo .bmerketo{
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.menulinks {
+    grid-area: menulinks;
+    display: flex;
+    justify-content:flex-end;
+}
+    .menulinks a {
+        text-decoration: none;
+        color: black;
+        margin: 1.5rem;
+    }
+.showcase {
+    background: #f3f3f3;
+    height: 650px;
+    
+}
+    .showcase .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "content img-showcase";
+        display: grid;
+    }
+    .showcase .content {
+        grid-area: content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .showcase .title-1 {
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 1;
+        margin-bottom: 2rem;
+    }
+    .showcase .title-2 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+    .showcase .img-showcase {
+        grid-area: img-showcase;
+        width: 625px;
+        height: 647px;
+        
+    }
+    .popularproduct .best-text{
+        display: flex;
+        justify-content:center;
+        
+    }
+    .popularproduct {
+        display: flex;
+        flex-direction: column;
+    }
+        .popularproduct .productcard {
+            width: 100px;
+            height: 100px;
+        }
+        .popularproduct .loadmore-btn{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+.productsale {
+    color: #FAEFEF;
+    height: 590px;
+}
+     .sale-img {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+.top-products{
+    margin: 40px;
+}
+    .top-text{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+    }
+.subscribe {
+    color: #707070;
+    height: 368px;
+}
+.subscribe .container{
+    display: flex;
+    justify-content: center;
+}
+
+.registerform {
+   width: 1110px;
+   border: 1px solid rgb(234, 234, 234);
+   padding: 50px;
+}
+
+    .registerform .title .headline {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .registerform .title .underline {
+        margin-top: 5px;
+        margin-bottom: 35px;
+        border-top: 1px solid black;
+        width: 30%;
+    }
+
+    .registerform .form-group {
+        margin-bottom: 20px;
+    }
+
+    .registerform a {
+        font-size: 14px;
+        color: #FA3150;
+        text-decoration: none;
+    }
+
+    .registerform input {
+        border-color: #222121;
+        border-radius: 0;
+    }
+    .registerform button {
+        position: relative;
+        background-color: #FA3150;
+        color: #ffffff;
+        padding: 20px 50px;
+        border-radius: 0;
+    }
+.footer {
+    height: 98px;
+    background-color: #292929;
+    color: #A5A5A5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .footer .container {
+        display: flex;
+        justify-content: center;
+    }

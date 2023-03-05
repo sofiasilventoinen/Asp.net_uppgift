@@ -1,0 +1,84 @@
+﻿@model List<ProductsCardModel>
+
+    @{
+        var bestcollection = Model.Take(8);
+    }
+
+
+<section class="showcase">
+    <div class="container">
+        <div class="content">
+            <div class="title-2">WELCOME TO BMERKETO SHOP</div>
+            <div class="title-1">Exclusive Chair Gold Collection</div>
+          <a asp-controller="Products" asp-action="Index">SHOP NOW</a>
+        </div>
+        <div class="img-showcase">
+           <img src="~/images/placeholders/img_625x647.png" alt=""/>
+        </div>
+    </div>
+</section>
+
+<section class="popularproduct container">
+    <div class="best-text">
+        <h1>BEST COLLECTION</h1>
+        <p>Bag/Dress/Decoration/Essentials/Interior/Laptop/Mobile/Beauty</p>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-4 g-4">
+        <img src="~/images/placeholders/img_625x647.png" alt="" />
+        <img src="~/images/placeholders/img_625x647.png" alt="" />
+        <img src="~/images/placeholders/img_625x647.png" alt="" />
+        <img src="~/images/placeholders/img_625x647.png" alt="" />
+        <img src="~/images/placeholders/img_625x647.png" alt="" />
+        <img src="~/images/placeholders/img_625x647.png" alt="" />
+        <img src="~/images/placeholders/img_625x647.png" alt="" />
+        <img src="~/images/placeholders/img_625x647.png" alt="" />
+    </div>
+    <div class="loadmore-btn"">
+        <button class="btn btn-outline-secondary">SHOP NOW</button>
+    </div>
+</section>
+
+<section class="productsale">
+    <div class="row row-cols-3 row-cols-sm-3 g-4">
+    <img src="~/images/placeholders/img_625x647.png" alt="" />
+    <img src="~/images/placeholders/img_625x647.png" alt="" />
+    <img src="~/images/placeholders/img_625x647.png" alt="" />
+    </div>
+</section>
+
+
+<section class="top-products" >
+    <div class="top-text">
+        <h1>Top Selling Products This Week</h1>
+    </div>
+    <div class="row row-cols-6 row-cols-sm-6">
+        <img src="~/images/placeholders/img_625x647.png" alt="" />
+        <img src="~/images/placeholders/img_625x647.png" alt="" />
+        <img src="~/images/placeholders/img_625x647.png" alt="" />
+        <img src="~/images/placeholders/img_625x647.png" alt="" />
+        <img src="~/images/placeholders/img_625x647.png" alt="" />
+        <img src="~/images/placeholders/img_625x647.png" alt="" />
+    </div>
+</section>
+
+ <section class="subscribe">
+     <div class="container">
+          <div class="input-group mb-3">
+               <input type="email" class="form-control" placeholder="Enter your email here" aria-label="Recipient's mail" aria-describedby="button-addon" />
+               <button class="btn btn-outline-secondary" type="button" id="button-addon">Subscribe</button>
+          </div>
+     </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
