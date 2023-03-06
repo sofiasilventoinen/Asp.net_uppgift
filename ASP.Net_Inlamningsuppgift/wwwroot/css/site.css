@@ -153,6 +153,16 @@ html, body {
         padding: 20px 50px;
         border-radius: 0;
     }
+.account{
+
+}
+    .account .logout-btn {
+        background-color: #FA3150;
+        color: #ffffff;
+        border-radius: 0;
+        text-decoration:none;
+        
+    }
 .footer {
     height: 98px;
     background-color: #292929;

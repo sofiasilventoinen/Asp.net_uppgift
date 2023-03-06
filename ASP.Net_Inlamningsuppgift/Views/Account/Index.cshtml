@@ -1,2 +1,72 @@
 ﻿
-<a asp-controller="Account" asp-action="Logout">Log Out</a>
+
+<section class="account">
+    
+    
+
+    <div class="row">
+        <div class="col-md-6">
+            
+            
+            <h3>Personal Information</h3>
+            <hr />
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" id="firstName" value="@Model.FirstName" readonly />
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" class="form-control" id="lastName" value="@Model.LastName" readonly />
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" value="@Model.Email" readonly />
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" class="form-control" id="phoneNumber" value="@Model.PhoneNumber" readonly />
+            </div>
+             <div class="form-group">
+                  <label for="streetName">Streetname:</label>
+                  <input type="text" class="form-control" id="streetName" value="@Model.StreetName" readonly />
+            </div>
+             <div class="form-group">
+                  <label for="postalCode">Postalcode:</label>
+                  <input type="text" class="form-control" id="postalCode" value="@Model.PostalCode" readonly />
+            </div>
+             <div class="form-group">
+                  <label for="city">City:</label>
+                  <input type="text" class="form-control" id="city" value="@Model.City" readonly />
+            </div>
+             <div class="form-group">
+                  <label for="company">Company:</label>
+                  <input type="text" class="form-control" id="company" value="@Model.Company" readonly />
+            </div>
+        </div>
+    </div>
+    <a class="logout-btn" asp-controller="Account" asp-action="Logout">Log Out</a>
+</section>
+           
+            
+
+@*<section class="d-flex justify-content-center align-items-center">
+    
+    <a asp-controller="Account" asp-action="Logout">Log Out</a>
+
+
+        <p>Name:</p>
+        <p>@Model.FirstName @Model.LastName</p>
+        
+        <p>Mail:</p>
+        <p>@Model.Email</p>
+
+        <p>Phone Number:</p>
+        <p>@Model.PhoneNumber</p>
+
+        <p>Address:</p>
+        <p>@Model.StreetName @Model.PostalCode @Model.City</p>
+
+        <p>Company:</p>
+        <p>@Model.Company</p>
+
+</section>*@
