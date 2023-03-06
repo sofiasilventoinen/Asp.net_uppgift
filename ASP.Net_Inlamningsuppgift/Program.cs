@@ -1,9 +1,11 @@
 using ASP.Net_Inlamningsuppgift.Contexts;
+using ASP.Net_Inlamningsuppgift.Models.Identity;
 using ASP.Net_Inlamningsuppgift.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ProductService>();
@@ -23,7 +25,7 @@ builder.Services.ConfigureApplicationCookie(x =>
     x.AccessDeniedPath = "/Errors/AccessDenied";
 });
 
-
+builder.Services.AddScoped<IUserClaimsPrincipalFactory<IdentityUser>, AppUserClaims>();
 
 
 var app = builder.Build();

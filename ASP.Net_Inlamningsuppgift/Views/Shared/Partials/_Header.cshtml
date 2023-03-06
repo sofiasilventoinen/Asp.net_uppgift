@@ -1,4 +1,5 @@
-﻿
+﻿@using Microsoft.AspNetCore.Identity;
+@inject SignInManager<IdentityUser> SignInManager;
 
 <div class="header container">
 
@@ -11,7 +12,15 @@
         <a asp-controller="Home" asp-action="Index">Home</a>
         <a asp-controller="Products" asp-action="Index">Products</a>
         <a asp-controller="Contact" asp-action="Index">Contact</a>
-        <a asp-controller="Login" asp-action="Index">Login</a>
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <a asp-controller="Account" asp-action="Index">Account</a>
+        }
+        else 
+        {
+            <a asp-controller="Login" asp-action="Index">Login</a>
+        }
+
     </div>
 
 </div>

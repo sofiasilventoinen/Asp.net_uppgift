@@ -25,8 +25,9 @@ namespace ASP.Net_Inlamningsuppgift.Controllers
             if (ModelState.IsValid)
             {
                 if (await _auth.LoginAsync(form))
-                    return LocalRedirect(form.ReturnUrl!); 
-                
+                    return RedirectToAction("Index", "Home");
+                //return LocalRedirect(form.ReturnUrl!);
+
             }
 
             ModelState.AddModelError(string.Empty, "Incorrect email or password");
